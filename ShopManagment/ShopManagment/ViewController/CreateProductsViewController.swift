@@ -27,8 +27,8 @@ extension CreateProductsViewController: UITableViewDelegate {
 
 extension CreateProductsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cellForRow(at: indexPath)
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CreateInfoCellIdentifier", for: indexPath)
+        return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

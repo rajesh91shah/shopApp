@@ -15,6 +15,11 @@
 		043660FE21555C0400227185 /* ShopManagmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043660FD21555C0400227185 /* ShopManagmentTests.swift */; };
 		0436610921555C0400227185 /* ShopManagmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436610821555C0400227185 /* ShopManagmentUITests.swift */; };
 		04366118215562DE00227185 /* CreateProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04366117215562DE00227185 /* CreateProductsViewController.swift */; };
+		04B11B1E2156A92D00F7C7F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B11B1D2156A92D00F7C7F0 /* LoginViewController.swift */; };
+		04B11B222156AA9800F7C7F0 /* MerchantLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B11B212156AA9800F7C7F0 /* MerchantLogin.storyboard */; };
+		04CB859121577C4E00B21A9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB859021577C4E00B21A9C /* User.swift */; };
+		04CB859421577EDF00B21A9C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB859321577EDF00B21A9C /* UserViewModel.swift */; };
+		04CB85972157883D00B21A9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB85962157883D00B21A9C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		0436610821555C0400227185 /* ShopManagmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopManagmentUITests.swift; sourceTree = "<group>"; };
 		0436610A21555C0400227185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04366117215562DE00227185 /* CreateProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProductsViewController.swift; sourceTree = "<group>"; };
+		04B11B1D2156A92D00F7C7F0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B11B212156AA9800F7C7F0 /* MerchantLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MerchantLogin.storyboard; sourceTree = "<group>"; };
+		04CB859021577C4E00B21A9C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04CB859321577EDF00B21A9C /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		04CB85962157883D00B21A9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 		043660E421555C0400227185 /* ShopManagment */ = {
 			isa = PBXGroup;
 			children = (
+				04CB8595215787F000B21A9C /* Constant */,
+				04CB859221577C7D00B21A9C /* API */,
+				04CB858E21577BDA00B21A9C /* Model */,
+				04CB858F21577BDA00B21A9C /* ViewModel */,
+				04B11B1F2156A9BD00F7C7F0 /* Storyboard */,
 				043661162155624700227185 /* ViewController */,
 				043660E521555C0400227185 /* AppDelegate.swift */,
 				043660E921555C0400227185 /* Main.storyboard */,
@@ -131,9 +146,65 @@
 		043661162155624700227185 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				04B11B1C2156A90C00F7C7F0 /* Login */,
 				04366117215562DE00227185 /* CreateProductsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04B11B1C2156A90C00F7C7F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04B11B1D2156A92D00F7C7F0 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04B11B1F2156A9BD00F7C7F0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				04B11B202156A9BD00F7C7F0 /* Login */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		04B11B202156A9BD00F7C7F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04B11B212156AA9800F7C7F0 /* MerchantLogin.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04CB858E21577BDA00B21A9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04CB859021577C4E00B21A9C /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04CB858F21577BDA00B21A9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04CB859321577EDF00B21A9C /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04CB859221577C7D00B21A9C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		04CB8595215787F000B21A9C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				04CB85962157883D00B21A9C /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +316,7 @@
 			files = (
 				043660F321555C0400227185 /* LaunchScreen.storyboard in Resources */,
 				043660F021555C0400227185 /* Assets.xcassets in Resources */,
+				04B11B222156AA9800F7C7F0 /* MerchantLogin.storyboard in Resources */,
 				043660EB21555C0400227185 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +342,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B11B1E2156A92D00F7C7F0 /* LoginViewController.swift in Sources */,
+				04CB859421577EDF00B21A9C /* UserViewModel.swift in Sources */,
 				04366118215562DE00227185 /* CreateProductsViewController.swift in Sources */,
 				043660EE21555C0400227185 /* ShopManagment.xcdatamodeld in Sources */,
+				04CB85972157883D00B21A9C /* Constants.swift in Sources */,
+				04CB859121577C4E00B21A9C /* User.swift in Sources */,
 				043660E621555C0400227185 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +593,7 @@
 				0436610F21555C0400227185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0436611021555C0400227185 /* Build configuration list for PBXNativeTarget "ShopManagmentTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +602,7 @@
 				0436611221555C0400227185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0436611321555C0400227185 /* Build configuration list for PBXNativeTarget "ShopManagmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +611,7 @@
 				0436611521555C0400227185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

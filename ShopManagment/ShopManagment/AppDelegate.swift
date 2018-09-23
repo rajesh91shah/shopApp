@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        showLoginScreen()
         return true
     }
 
@@ -89,5 +90,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+// App Launch
+extension AppDelegate {
+    
+    /**
+        this method ** Open the Login Screen**
+    */
+    func showLoginScreen() {
+        let merchantSoryBoard = "MerchantLogin"
+        let storyBoard = UIStoryboard.init(name: merchantSoryBoard, bundle: nil)
+        let loginViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
+        window?.rootViewController = loginViewController
+        window?.makeKeyAndVisible()
+        
+    }
+    
+    /// show the Home screen
+    func showHomeScreen() {
+    
+    }
 }
 
