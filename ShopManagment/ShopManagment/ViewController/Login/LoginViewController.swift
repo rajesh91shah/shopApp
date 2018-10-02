@@ -13,11 +13,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var merchantPassword: UITextField!
     @IBOutlet weak var merchantID: UITextField!
     
+    @IBOutlet weak var codeLabel: UILabel!
     private var userViewModel = UserViewModel()
     
     // MARK: Controller LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userViewModel.accessCode.bind {
+            self.codeLabel.text = $0
+            
+        }
     }
 
     
@@ -29,7 +35,10 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTapped(_ sender: Any) {
         userViewModel.updateName(name: merchantID.text!)
         userViewModel.updatePassword(password: merchantPassword.text!)
-        userViewModel.authenticate()
+        
+        if userViewModel.authenticate() {
+            AppAlert.showAlert(title: "Login", message: "Login Successfull", in: self)
+        }
         
     }
     

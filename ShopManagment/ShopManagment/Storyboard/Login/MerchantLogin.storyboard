@@ -28,6 +28,7 @@
                                     <constraint firstAttribute="height" constant="40" id="RBe-PT-XO6"/>
                                 </constraints>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="txi-Ww-vsK" id="960-vU-OJe"/>
@@ -62,17 +63,30 @@
                                     <action selector="loginButtonTapped:" destination="txi-Ww-vsK" eventType="touchUpInside" id="1fA-PQ-gs4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-EW-3sT">
+                                <rect key="frame" x="137.5" y="442" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.29212637466533287" green="1" blue="0.3273846351492411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6mz-Yt-NXy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="gfB-Wc-Arl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.31753438287981128" blue="0.25778051969485161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5563616071428571" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="leading" secondItem="926-rT-ihF" secondAttribute="leading" id="5bN-VB-Kxw"/>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="trailing" secondItem="926-rT-ihF" secondAttribute="trailing" id="FxT-2Q-Eak"/>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="centerY" secondItem="o9w-rP-1YA" secondAttribute="centerY" id="Ie3-j7-VhK"/>
+                            <constraint firstItem="eZj-EW-3sT" firstAttribute="centerX" secondItem="o9w-rP-1YA" secondAttribute="centerX" id="MfP-3u-Fez"/>
                             <constraint firstItem="4qo-7Z-sws" firstAttribute="top" secondItem="pLA-KF-FxQ" secondAttribute="bottom" constant="32" id="Uop-4m-wdI"/>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="leading" secondItem="o9w-rP-1YA" secondAttribute="leadingMargin" constant="16" id="VKp-yt-8DQ"/>
                             <constraint firstItem="4qo-7Z-sws" firstAttribute="centerX" secondItem="o9w-rP-1YA" secondAttribute="centerX" id="Zhb-Cn-UOi"/>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="height" secondItem="926-rT-ihF" secondAttribute="height" id="lNY-5i-OXM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pLA-KF-FxQ" secondAttribute="trailing" constant="16" id="pOn-Ex-rFx"/>
+                            <constraint firstItem="eZj-EW-3sT" firstAttribute="top" secondItem="4qo-7Z-sws" secondAttribute="bottom" constant="16" id="qXu-9k-wiw"/>
                             <constraint firstItem="pLA-KF-FxQ" firstAttribute="top" secondItem="926-rT-ihF" secondAttribute="bottom" constant="16" id="sz6-qD-JT2"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -80,6 +94,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="codeLabel" destination="eZj-EW-3sT" id="lkW-AZ-dAc"/>
                         <outlet property="merchantID" destination="926-rT-ihF" id="q8Q-Ze-swr"/>
                         <outlet property="merchantPassword" destination="pLA-KF-FxQ" id="5oT-s7-CNI"/>
                     </connections>

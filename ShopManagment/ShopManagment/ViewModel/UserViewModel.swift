@@ -10,7 +10,15 @@ import Foundation
 
 class UserViewModel {
     fileprivate var user = User()
+    fileprivate let codeRefreshTime = 5
     
+    static var code = 123
+    var accessCode: Box<String?> = Box(nil)
+    
+    init(user: User = User()) {
+        self.user = user
+    }
+
 }
 
 //MARK: Getter
@@ -23,6 +31,8 @@ extension UserViewModel {
     var userPassword: String? {
         return user.password
     }
+    
+ 
 
 }
 
@@ -41,6 +51,7 @@ extension UserViewModel {
 //MARK: logic
 extension UserViewModel {
     func authenticate() -> Bool {
+        startedAccessCodeTimer()
         if userName == usersName && userPassword == password {
             print("Login Successfully")
             return true
@@ -54,4 +65,12 @@ extension UserViewModel {
             return false
         }
     }
+}
+
+extension UserViewModel {
+    func startedAccessCodeTimer() {
+        accessCode.value = "\(UserViewModel.code * 2)"
+        UserViewModel.code = UserViewModel.code * 2
+    }
+    
 }

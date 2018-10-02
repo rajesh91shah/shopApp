@@ -15,11 +15,13 @@
 		043660FE21555C0400227185 /* ShopManagmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043660FD21555C0400227185 /* ShopManagmentTests.swift */; };
 		0436610921555C0400227185 /* ShopManagmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436610821555C0400227185 /* ShopManagmentUITests.swift */; };
 		04366118215562DE00227185 /* CreateProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04366117215562DE00227185 /* CreateProductsViewController.swift */; };
+		04AEFC862160B55A00196D6A /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEFC852160B55A00196D6A /* AppAlert.swift */; };
 		04B11B1E2156A92D00F7C7F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B11B1D2156A92D00F7C7F0 /* LoginViewController.swift */; };
 		04B11B222156AA9800F7C7F0 /* MerchantLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B11B212156AA9800F7C7F0 /* MerchantLogin.storyboard */; };
 		04CB859121577C4E00B21A9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB859021577C4E00B21A9C /* User.swift */; };
 		04CB859421577EDF00B21A9C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB859321577EDF00B21A9C /* UserViewModel.swift */; };
 		04CB85972157883D00B21A9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB85962157883D00B21A9C /* Constants.swift */; };
+		04F18714216394310096ED4A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F18713216394310096ED4A /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +56,13 @@
 		0436610821555C0400227185 /* ShopManagmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopManagmentUITests.swift; sourceTree = "<group>"; };
 		0436610A21555C0400227185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04366117215562DE00227185 /* CreateProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProductsViewController.swift; sourceTree = "<group>"; };
+		04AEFC852160B55A00196D6A /* AppAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
 		04B11B1D2156A92D00F7C7F0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04B11B212156AA9800F7C7F0 /* MerchantLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MerchantLogin.storyboard; sourceTree = "<group>"; };
 		04CB859021577C4E00B21A9C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04CB859321577EDF00B21A9C /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		04CB85962157883D00B21A9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04F18713216394310096ED4A /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		043660E421555C0400227185 /* ShopManagment */ = {
 			isa = PBXGroup;
 			children = (
+				04AEFC842160B51200196D6A /* Utility */,
 				04CB8595215787F000B21A9C /* Constant */,
 				04CB859221577C7D00B21A9C /* API */,
 				04CB858E21577BDA00B21A9C /* Model */,
@@ -150,6 +155,15 @@
 				04366117215562DE00227185 /* CreateProductsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04AEFC842160B51200196D6A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04AEFC852160B55A00196D6A /* AppAlert.swift */,
+				04F18713216394310096ED4A /* Box.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		04B11B1C2156A90C00F7C7F0 /* Login */ = {
@@ -344,8 +358,10 @@
 			files = (
 				04B11B1E2156A92D00F7C7F0 /* LoginViewController.swift in Sources */,
 				04CB859421577EDF00B21A9C /* UserViewModel.swift in Sources */,
+				04AEFC862160B55A00196D6A /* AppAlert.swift in Sources */,
 				04366118215562DE00227185 /* CreateProductsViewController.swift in Sources */,
 				043660EE21555C0400227185 /* ShopManagment.xcdatamodeld in Sources */,
+				04F18714216394310096ED4A /* Box.swift in Sources */,
 				04CB85972157883D00B21A9C /* Constants.swift in Sources */,
 				04CB859121577C4E00B21A9C /* User.swift in Sources */,
 				043660E621555C0400227185 /* AppDelegate.swift in Sources */,
